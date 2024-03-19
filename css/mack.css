@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+
+/* MEDIA QUERYS  */
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .listformat {
+        font-size: 12px;
+        margin: 15px auto;
+    }
+
+    .homelink {
+        font-size: 28px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .featuredlink {
+        font-size: 20px;
+    }
+
+    .homeCard {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .allFeatured {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablet size */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .listformat {
+        font-size: 15px;
+        margin: 15px auto;
+    }
+
+    .homelink {
+        font-size: 35px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .allFeatured {
+        flex-direction: row;
+        padding: 30px 20px;
+    }
+
+    .featuredlink {
+        font-size: 25px;
+    }
+
+    .cshformat {
+        padding: 30px 30px; /* Add padding to .csformat */
+    }
+    
+    .homeHero {
+        padding: 80px 20px;
+    }
+    
+    .homefeatured {
+        padding: 30px 20px;
+    }
+    
+    .articleFormat {
+        padding: 30px 30px;
+    }
+    
+    .linkheader {
+        padding: 30px 20px;
+    }
+
+}
+
+/* Desktop size */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .listformat {
+        font-size: 18px;
+        margin: 18px auto;
+    }
+
+    .homelink {
+        font-size: 42px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .allFeatured {
+        flex-direction: row;
+    }
+
+    .featuredlink {
+        font-size: 30px;
+    }
+
+    
+}
+
+
+
+/* MAIN CSS !!!! */
+
+h1 {
+    font-family: 'BN Cringe Serif';
+    font-weight: 300;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'BN Cringe Serif';
+    font-weight: 300;
+    font-style: italic;
+}
+
+h5 {
+    font-family: 'Alegreya';
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cshformat p {
+    font-family: 'BN Cringe Serif';
+    font-weight: 300;
+    font-style: normal;
+}
+
+.listformat {
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 strong {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.casestudyheader {
+    display: flex; /* Set the container as a flex container */
+    flex-direction: column;/* Stretch items vertically */
+    margin: 0;
+    padding: 0;
+}
+
+.casestudyheader img {
+    width: 100vw; /* Set the image width to 100% of viewport width */
+    height: 75vh; /* Allow the height to adjust according to the aspect ratio */
+    object-fit: cover; /* Cover the entire container */
+    object-position: center; /* Center the image */
+    margin: 0; /* Remove any default margins */
+}
+
+
+.cshformat {
+    background-color: black;
+    padding: 30px 100px; /* Add padding to .csformat */
+}
+
+.cshformat h2 {
+    color: white;
+    font-family: 'BN Cringe Serif';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cshskills {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.homelink {
+    font-family: 'Alegreya';
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+.homeHero {
+    background-color: black;
+    color: white;
+    padding: 80px 80px;
+    height: 80vh;
+}
+
+.homefeatured {
+    display: flex;
+    flex-direction: column;
+    background-color: FCFCFC;
+    color: #000000;
+    padding: 30px 80px;
+}
+
+.homeCard {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+
+.homefeatured hr {
+    height: .1rem; 
+    background-color: #000000;
+    width: 100%; 
+    margin: 10px 0; 
+    border: none; 
+}
+
+.cshformat hr {
+    height: .1rem;
+    width: 100%; 
+    margin: 0 auto; 
+    border-color: white;
+}
+
+.articleFormat {
+    padding: 30px 100px;
+}
+
+.articleImgFormat {
+    width: 98.78vw; 
+    padding: 30px 100px;
+    margin-left: -100px; 
+    margin-right: -100px; 
+    background-color: #EB536E; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.articleImgFormat img {
+    object-fit: contain; /* Fit the entire image within the container */
+    width: 100%; /* Ensure the image takes up the entire width of its container */
+    height: 100%;
+    object-position: center;
+}
+
+.linkheader {
+    background-color: black;
+    color: white;
+    width: 100%; 
+    height: auto;
+    box-sizing: border-box; 
+    font-size: 40px;
+    padding: 30px 80px;
+}
+
+.allFeatured {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 5%;
+    padding: 30px 80px;
+}
+
+.allFeaturedCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredlink {
+    font-family: 'Alegreya';
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    width: 100%; 
+    padding: 20px 80px;
+    box-sizing: border-box;
+}
+
+.footerFormat {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerFormat p {
+    margin: 5px;
+}
+
+.socialFormat {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

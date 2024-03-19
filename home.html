@@ -3,33 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/mack.css">
     <title>Mack! Home</title>
 </head>
 <body>
     <header>
-        <main>
-            <h1>Hi there!</h1>
-            <h1>I’m McKenzie Addison! A second year User Experience and Interaction Design student @ Drexel University, interested in visual storytelling.</h1>
-        </main>
+        <ul class="menu-items">
+            <li class="topnav"><a href="home.html">Home</a></li>
+            <li class="topnav"><a href="work.html">Work</a>
+                <ul>
+                    <li class="subnav"><a href="freelibrary.html">Free Library of Philadelphia</a></li>
+                    <li class="subnav"><a href="everyapp.html">Every(): A Habit Tracker App</a></li>
+                    <li class="subnav"><a href="experiments.html">Experiments In Web Design</a></li>
+                </ul>
+            </li>
+            <li class="topnav"><a href="play.html">Play</a>
+                <ul>
+                    <li class="subnav"><a href="popseries.html">Pop! Poster Series</a></li>
+                    <li class="subnav"><a href="cab.html">Campus Activities Board</a></li>
+                </ul>
+            </li>
+            <li class="topnav"><a href="https://drive.google.com/file/d/1GgsSFKqbFpNrLwegE-kwx3RjCBTjE2sG/view?usp=sharing" target="_blank">Resume</a></li>
+            <li class="topnav"><a href="about.html">About</a></li>
+        </ul>
     </header>
-    <section class="featured">
-        <div>
-            <img src="graphics/freelibrarythumbnail.png" alt="a screenshot of a website page with text and images of books on a pink background">
-            <a href="freelibrary.html" class="homelink">Free Library of Philadelphia Redesign</a>
-            <p>UI Design/UX Research</p>
-        </div>
-        <div>
-            <img src="graphics/freelibrarythumbnail.png" alt="a screenshot of a website page with text and images of books on a pink background">
-            <a href="freelibrary.html" class="homelink">Free Library of Philadelphia Redesign</a>
-            <p>UI Design/UX Research</p>
-        </div>
-        <div>
-            <img src="graphics/freelibrarythumbnail.png" alt="a screenshot of a website page with text and images of books on a pink background">
-            <a href="freelibrary.html" class="homelink">Free Library of Philadelphia Redesign</a>
-            <p>UI Design/UX Research</p>
+    <main>
+        <div class="homeHero">
+            <h2>Hi there!</h2>
+            <h1>I’m <strong>Mack!</strong> A second-year User Experience and Interaction Design student @ Drexel University, interested in visual storytelling.</h1>
+            <h4>Explore a few of my featured projects! </h4>
         </div>
 
-    </section>
-
+        <div class="homefeatured">
+            <div class="homeCard">
+                <img src="https://fakeimg.pl/300x200/3479C8" alt="a screenshot of a website page with text and images of books on a pink background">
+                <a href="freelibrary.html" class="homelink">Free Library of Philadelphia Redesign</a>
+            </div>
+            <hr>
+            <div class="homeCard">
+                <img src="https://fakeimg.pl/300x200/EB536E/" alt="a screenshot of a website page with text and images of books on a pink background">
+                <a href="everyapp.html" class="homelink">Every(): A Habit Tracker</a>
+            </div>
+            <hr>
+            <div class="homeCard">
+                <img src="https://fakeimg.pl/300x200/9062F2/" alt="a screenshot of a website page with text and images of books on a pink background">
+                <a href="cab.html" class="homelink">Campus Activities Board</a>
+            </div>
+            <hr>
+        </div>
+    </main>
+    <footer>
+        <div class="footerFormat">
+            <p>Made with Love by Mack! Addison</p>
+            <p>Philadlephia, PA</p>
+        </div>
+        <div class="footerFormat">
+            <p>Contact</p>
+            <div class="socialFormat">
+                <a href="https://www.linkedin.com/in/mackaddison/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/heinskeys"><i class="fab fa-github"></i> Github</a>
+                <a href="mailto:mba58@drexel.edu"><i class="far fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
