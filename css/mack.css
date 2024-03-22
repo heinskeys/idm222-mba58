@@ -29,15 +29,31 @@
         font-size: 12px;
     }
 
-    .listformat {
-        font-size: 12px;
-        margin: 15px auto;
+        /* HOMEPAGE FORMATTING */
+
+    .homeCard {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
     }
 
     .homelink {
         font-size: 28px;
-        padding-left: 30px;
         text-decoration: none;
+    }
+
+    .homeHero {
+        padding: 30px 35px;
+    }
+    
+    .homefeatured {
+        padding: 30px 20px;
+    }
+
+    .listformat {
+        font-size: 12px;
+        margin: 15px auto;
     }
 
     .featuredlink {
@@ -49,11 +65,6 @@
         grid-template-columns: 1fr;
         grid-gap: 20px;
         margin: 20px 40px;
-    }
-
-    .homeCard {
-        flex-direction: column;
-        text-align: left;
     }
     
 
@@ -85,41 +96,63 @@
         font-size: 15px;
     }
 
-    .listformat {
-        font-size: 15px;
-        margin: 15px auto;
+    /* HOMEPAGE FORMATTING */
+
+    .homeCard {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
     }
 
     .homelink {
         font-size: 35px;
-        padding-left: 30px;
         text-decoration: none;
     }
 
-
-    .featuredlink {
-        font-size: 25px;
-    }
-
-    .cshformat {
-        padding: 30px 30px; /* Add padding to .csformat */
-    }
-    
     .homeHero {
-        padding: 80px 20px;
+        padding: 50px 50px;
     }
     
     .homefeatured {
         padding: 30px 20px;
     }
-    
+
+    /* CASE STUDY FORMATTING */
+
+    .listformat {
+        font-size: 15px;
+        margin: 15px auto;
+    }
+
+    .cshformat {
+        padding: 30px 30px; 
+    }
+
+    .linkheader {
+        padding: 30px 20px;
+    }
+
+    /* WORK/PLAY FORMATTING */
+
+    .allFeatured {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        grid-gap: 20px;
+        margin: 20px 40px;
+    }
+
+    .featuredlink {
+        font-size: 25px;
+    }
+
     .articleFormat {
         padding: 30px 30px;
     }
     
-    .linkheader {
-        padding: 30px 20px;
-    }
+    
+    /* FOOTER FOMATTING */
+
 
 }
 
@@ -149,6 +182,29 @@
         font-size: 18px;
     }
 
+    /* HOMEPAGE FORMATTING  */
+    .homelink {
+        font-size: 42px;
+        padding-left: 30px;
+        text-decoration: none;
+    }
+
+    .homeCard {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .homeHero {
+        padding: 80px 80px;
+    }
+
+    .homefeatured {
+        padding: 30px 80px;
+    }
+
+    /*  WORK/PLAY FORMATTING  */
     .allFeatured {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -156,28 +212,26 @@
         margin: 30px 80px;
     }
 
+    .featuredlink {
+        font-size: 30px;
+    }
+
+    /* CASE STDY FORMATTING  */
+
     .listformat {
         font-size: 18px;
         margin: 18px auto;
     }
 
-    .homelink {
-        font-size: 42px;
-        padding-left: 30px;
-        text-decoration: none;
-    }
+    /* FOOTER FORMATTING  */
 
-
-    .featuredlink {
-        font-size: 30px;
-    }
-
-    
 }
 
 
 
 /* MAIN CSS !!!! */
+
+/* FONT SETTINGS */
 
 h1 {
     font-family: 'BN Cringe Serif';
@@ -232,6 +286,64 @@ h1 strong {
     font-style: italic;
 }
 
+.cshskills {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cshformat h2 {
+    color: white;
+    font-family: 'BN Cringe Serif';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.homelink {
+    font-family: 'Alegreya';
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+}
+
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+/* HOMEPAGE FOMATTING  */
+.homeHero {
+    background-color: black;
+    color: white;
+    height: 80vh;
+    height: fit-content;
+}
+
+.homefeatured {
+    display: flex;
+    flex-direction: column;
+    background-color: FCFCFC;
+    color: #000000;
+}
+
+.homeCard img {
+    width: 50vw; /* Set the width of the image to 50% of the viewport width */
+    max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.homefeatured hr {
+    height: .1rem; 
+    background-color: #000000;
+    width: 100%; 
+    margin: 10px 0; 
+    border: none; 
+}
+
+/* FORMAT OF CASE STUDIES */
+
 .casestudyheader {
     display: flex; /* Set the container as a flex container */
     flex-direction: column;/* Stretch items vertically */
@@ -247,74 +359,9 @@ h1 strong {
     margin: 0; /* Remove any default margins */
 }
 
-
 .cshformat {
     background-color: black;
     padding: 30px 100px; /* Add padding to .csformat */
-}
-
-.cshformat h2 {
-    color: white;
-    font-family: 'BN Cringe Serif';
-    font-weight: normal;
-    font-style: normal;
-}
-
-.cshskills {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-
-
-.homelink {
-    font-family: 'Alegreya';
-    font-weight: 500;
-    font-style: normal;
-    color: #000000;
-}
-
-body { 
-    margin: 0;
-    padding: 0;
-}
-
-.homeHero {
-    background-color: black;
-    color: white;
-    padding: 80px 80px;
-    height: 80vh;
-}
-
-.homefeatured {
-    display: flex;
-    flex-direction: column;
-    background-color: FCFCFC;
-    color: #000000;
-    padding: 30px 80px;
-}
-
-.homeCard {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
-    align-items: center;
-}
-
-.homeCard img {
-    width: 300px;
-}
-
-
-
-.homefeatured hr {
-    height: .1rem; 
-    background-color: #000000;
-    width: 100%; 
-    margin: 10px 0; 
-    border: none; 
 }
 
 .cshformat hr {
@@ -324,20 +371,32 @@ body {
     border-color: white;
 }
 
-.articleFormat {
-    padding: 30px 100px;
-}
+/* CASE STUDY IMAGE FORMATTING  */
 
 .articleImgFormat {
     width: 98.78vw; 
     padding: 30px 100px;
     margin-left: -100px; 
     margin-right: -100px; 
-    background-color: #EB536E; 
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.articleFormat {
+    padding: 30px 100px;
+}
+
+#pinkArticle {
+    background-color: #EB536E;
+}
+
+#blueArticle {
+    background-color: #3479C8;
+}
+
+#purpleArticle {
+    background-color: #9062F2;
+}
 .articleImgFormat img {
     object-fit: contain; /* Fit the entire image within the container */
     width: 100%; /* Ensure the image takes up the entire width of its container */
@@ -345,6 +404,7 @@ body {
     object-position: center;
 }
 
+/* WORK/PLAY FORMATTING  */
 .linkheader {
     background-color: black;
     color: white;
@@ -354,12 +414,6 @@ body {
     font-size: 40px;
     padding: 30px 80px;
 }
-
-/* .allFeatured {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-} */
 
 .allFeaturedCard { 
     display: flex;
@@ -373,6 +427,12 @@ body {
     color: #000000;
     text-decoration: none;
 }
+
+.allFeatured img {
+    width: 400px;
+}
+
+/* FOOTER FOMARTTING  */
 
 footer {
     display: flex;
